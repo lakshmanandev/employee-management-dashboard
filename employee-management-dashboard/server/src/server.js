@@ -14,6 +14,19 @@ app.use(cors({ origin: process.env.CLIENT_ORIGIN || '*' }));
 app.use(express.json()); // parse JSON request bodies
 
 // --- Health check ---
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Employee Management Dashboard API is running',
+    status: 'ok',
+    endpoints: {
+      health: '/api/health',
+      login: '/api/auth/login',
+      employees: '/api/employees',
+      stats: '/api/employees/stats/summary',
+    },
+  });
+});
+
 app.get('/api/health', (req, res) => res.json({ status: 'ok', time: new Date() }));
 
 // --- Feature routes ---
