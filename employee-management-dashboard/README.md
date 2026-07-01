@@ -16,6 +16,10 @@ https://employee-management-dashboard-4va9674dw-lakshmanan-ms-projects.vercel.ap
 
 https://employee-management-dashboard-ehxu.onrender.com/
 
+Health Check:
+
+https://employee-management-dashboard-ehxu.onrender.com/api/health
+
 ---
 
 # 👨‍💻 Demo Credentials
@@ -136,7 +140,7 @@ employee-management-dashboard/
 ```bash
 git clone https://github.com/lakshmanandev/employee-management-dashboard.git
 
-cd employee-management-dashboard
+cd employee-management-dashboard/employee-management-dashboard
 ```
 
 ---
@@ -153,17 +157,11 @@ Create `.env`
 
 ```env
 PORT=5000
-
 MONGO_URI=your_mongodb_connection_string
-
 JWT_SECRET=your_secret_key
-
 JWT_EXPIRES_IN=1d
-
 SEED_ADMIN_EMAIL=admin@ems.com
-
 SEED_ADMIN_PASSWORD=admin123
-
 CLIENT_ORIGIN=http://localhost:5173
 ```
 
@@ -177,6 +175,12 @@ Run Server
 
 ```bash
 npm run dev
+```
+
+The backend runs on:
+
+```text
+http://localhost:5000
 ```
 
 ---
@@ -207,6 +211,12 @@ Run
 
 ```bash
 npm run dev
+```
+
+The frontend runs on:
+
+```text
+http://localhost:5173
 ```
 
 ---
@@ -246,45 +256,21 @@ npm run dev
 
 ## Backend
 
-```bash
-npm run dev
-```
-
-Start Development Server
-
-```bash
-npm start
-```
-
-Start Production Server
-
-```bash
-npm run seed
-```
-
-Seed Admin User & Sample Employees
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start development server with nodemon |
+| `npm start` | Start production server |
+| `npm run seed` | Seed admin user and sample employees |
 
 ---
 
 ## Frontend
 
-```bash
-npm run dev
-```
-
-Start Development Server
-
-```bash
-npm run build
-```
-
-Build Production Files
-
-```bash
-npm run preview
-```
-
-Preview Production Build
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start Vite development server |
+| `npm run build` | Build production files |
+| `npm run preview` | Preview production build |
 
 ---
 
@@ -293,10 +279,17 @@ Preview Production Build
 Frontend
 
 - Vercel
+- Set `VITE_API_URL` to:
+
+```env
+VITE_API_URL=https://employee-management-dashboard-ehxu.onrender.com/api
+```
 
 Backend
 
 - Render
+- Set backend root directory to `server` if deploying from the nested project folder.
+- Add all required environment variables from the backend `.env` example.
 
 Database
 
@@ -322,8 +315,6 @@ Database
 - Dashboard
 - Employee Management
 - Analytics Dashboard
-
-(Add screenshots here after deployment)
 
 ---
 
