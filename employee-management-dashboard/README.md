@@ -310,11 +310,15 @@ Database
 ---
 
 # 📸 Screenshots
+## Login Page
+<img width="1920" height="912" alt="image" src="https://github.com/user-attachments/assets/3f6ea67b-485e-4830-a156-bd16f0cbe9b9" />
 
-- Login Page
-- Dashboard
-- Employee Management
-- Analytics Dashboard
+## Dashboard
+<img width="1917" height="1210" alt="image" src="https://github.com/user-attachments/assets/19823f42-f42c-4f9f-89b0-a940583ec367" />
+
+## Employee Management
+<img width="1897" height="886" alt="image" src="https://github.com/user-attachments/assets/45483f4d-2622-4e0c-8db1-5304d620ae55" />
+
 
 ---
 
